@@ -4,6 +4,8 @@
 
 给自己用，也给客户看。适合做海外 PR / 发稿 / 内容投放的人核对交付结果。
 
+![界面](docs/screenshot.png)
+
 > English: see [README.en.md](README.en.md)
 
 ## 它解决什么问题

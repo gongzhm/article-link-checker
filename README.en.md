@@ -4,6 +4,8 @@ Paste the URL of an overseas media placement and see five things at once: **the 
 
 Built for people who have to prove a placement actually ran — and for the clients who ask.
 
+![Interface](docs/screenshot.png)
+
 > 中文说明见 [README.md](README.md)
 
 ## What it is for
