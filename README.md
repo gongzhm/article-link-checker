@@ -1,8 +1,8 @@
 # Article Link Checker
 
-![在线版界面](docs/official.png)
+![在线版界面（英文）](docs/official.png)
 
-<sub>上图是在线托管版（<https://www.youtupr.com/tools/article-link-checker>，带品牌样式）的界面；本地部署后功能一致、界面更简洁，见下方「快速开始」。</sub>
+<sub>上图是在线托管版（<https://www.youtupr.com/tools/article-link-checker>，英文界面、带品牌样式）的截图；本地部署后功能一致、界面更简洁，见下方「快速开始」。</sub>
 
 粘贴一篇海外媒体文章的网址，一次看清五件事：**正文里的品牌链接与锚文本、有没有被谷歌收录、媒体首页有没有入口、页面实际长什么样、发布版和你的原稿差在哪**。最后导出一个压缩包：图文报告 + 截图原图 + 带修订模式的 Word。
 

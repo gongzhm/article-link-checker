@@ -1,6 +1,6 @@
 # Article Link Checker
 
-![Hosted version](docs/official.png)
+![Hosted version — English UI](docs/official.png)
 
 <sub>The screenshot above is the hosted version (<https://www.youtupr.com/tools/article-link-checker>, branded UI). The self-hosted build below ships the same features with a plainer interface — see Quick start.</sub>
 
