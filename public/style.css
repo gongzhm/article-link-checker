@@ -15,7 +15,7 @@ body{margin:0;background:var(--bg);color:var(--ink);font:15px/1.7 -apple-system,
 .gh:hover{background:#ffffff14}
 main{padding:26px 0 10px;flex:1}
 .card{background:#fff;border:1px solid var(--line);border-radius:14px;padding:22px;margin-bottom:18px}
-.form{display:grid;grid-template-columns:1.6fr 1fr auto;gap:14px;align-items:end}
+.form{display:grid;grid-template-columns:1fr auto;gap:14px;align-items:end}
 @media(max-width:760px){.form{grid-template-columns:1fr}}
 .field{display:flex;flex-direction:column;gap:6px;font-size:13px;font-weight:600}
 .field span em{color:var(--err);font-style:normal}

@@ -7,6 +7,8 @@
 ![界面](docs/screenshot.png)
 
 > English: see [README.en.md](README.en.md)
+>
+> 在线版（免部署，直接试用）：<https://www.youtupr.com/tools/article-link-checker>
 
 ## 它解决什么问题
 
@@ -18,7 +20,7 @@
 
 | 功能 | 说明 |
 |---|---|
-| 品牌链接核查 | 提取正文里指向指定域名的链接、锚文本、`dofollow` / `nofollow` / `sponsored` / `ugc` |
+| 品牌链接核查 | 自动识别正文里属于品牌方的外链（按锚文本、落地页路径打分），给出锚文本与 `dofollow` / `nofollow` / `sponsored` / `ugc`；也可手动指定域名 |
 | 谷歌收录 | 查这篇文章是否被索引、搜索结果里排第几（需配置 DataForSEO，可选） |
 | 实拍截图 | 文章页 / 频道栏目页 / 媒体首页首屏，1500×1000 JPEG |
 | 原稿对比 | 上传 `.docx` / `.pdf` / `.md` / `.txt` / `.html`，逐处比对标题、锚文本、链接、配图、正文；标点与同义措辞等细微差异自动忽略 |

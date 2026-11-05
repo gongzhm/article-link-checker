@@ -17,7 +17,6 @@ let compareJob = null;
 async function startCheck(event) {
   event.preventDefault();
   const url = $('#url').value.trim();
-  const targetDomain = $('#domain').value.trim();
   if (!url) return;
   clearTimeout(pollTimer);
   result = null; comparison = null; compareJob = null;
@@ -29,7 +28,7 @@ async function startCheck(event) {
     const response = await fetch('/api/article-check', {
       method: 'POST',
       headers: { 'Content-Type': 'application/json' },
-      body: JSON.stringify({ url, targetDomain }),
+      body: JSON.stringify({ url }),
     });
     const data = await response.json().catch(() => ({ error: `HTTP ${response.status}` }));
     if (!response.ok) throw new Error(data.error || '查询失败');
@@ -304,7 +303,6 @@ async function download() {
 $('#form').addEventListener('submit', startCheck);
 $('#sample').addEventListener('click', () => {
   $('#url').value = 'https://www.thepaintedhinge.com/how-to-shape-a-contemporary-living-room-around-a-modern-leather-sofa/';
-  $('#domain').value = 'flexispot.com';
 });
 $('#file').addEventListener('change', onFile);
 $('#download').addEventListener('click', download);

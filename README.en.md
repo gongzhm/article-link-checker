@@ -7,6 +7,8 @@ Built for people who have to prove a placement actually ran — and for the clie
 ![Interface](docs/screenshot.png)
 
 > 中文说明见 [README.md](README.md)
+>
+> Hosted demo (no install): <https://www.youtupr.com/tools/article-link-checker>
 
 ## What it is for
 
@@ -18,7 +20,7 @@ Doing that by hand means screenshots, copy-pasted URLs and a hand-written compar
 
 | Feature | Detail |
 |---|---|
-| Brand link audit | Links pointing to a given domain, with anchor text and `dofollow` / `nofollow` / `sponsored` / `ugc` |
+| Brand link audit | Detects the brand's own outbound links automatically (anchor text + landing-path scoring), with `dofollow` / `nofollow` / `sponsored` / `ugc`; a domain can also be specified manually |
 | Google indexing | Whether the article is indexed and where it ranks (optional, needs DataForSEO) |
 | Live screenshots | Article page, section page, outlet homepage — 1500×1000 JPEG |
 | Draft comparison | Upload `.docx` / `.pdf` / `.md` / `.txt` / `.html`; title, anchors, links, images and body text are diffed, while punctuation and synonym-level rewording are ignored |
