@@ -27,7 +27,7 @@ Doing that by hand means screenshots, copy-pasted URLs and a hand-written compar
 ## Quick start
 
 ```bash
-git clone <this-repo> article-link-checker
+git clone https://github.com/gongzhm/article-link-checker.git
 cd article-link-checker
 
 npm install                       # also installs Chrome for Testing

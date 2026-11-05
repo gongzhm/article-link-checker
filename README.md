@@ -27,7 +27,7 @@
 ## 快速开始
 
 ```bash
-git clone <this-repo> article-link-checker
+git clone https://github.com/gongzhm/article-link-checker.git
 cd article-link-checker
 
 npm install                       # 会一并安装 Chrome for Testing
