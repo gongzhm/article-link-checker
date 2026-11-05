@@ -1,0 +1,41 @@
+{
+  "name": "article-link-checker",
+  "version": "1.0.0",
+  "description": "Check brand links, Google indexing and live screenshots of an overseas media placement, diff it against your original draft, and export an HTML report + screenshots + a Word redline.",
+  "type": "module",
+  "license": "MIT",
+  "engines": {
+    "node": ">=22"
+  },
+  "scripts": {
+    "start": "node --env-file-if-exists=.env src/server.mjs",
+    "dev": "node --watch --env-file-if-exists=.env src/server.mjs",
+    "test": "node --test src/*.test.mjs"
+  },
+  "keywords": [
+    "pr",
+    "media-monitoring",
+    "backlink-checker",
+    "seo",
+    "puppeteer",
+    "docx",
+    "tracked-changes"
+  ],
+  "dependencies": {
+    "cheerio": "^1.1.2",
+    "diff": "^9.0.0",
+    "ipaddr.js": "^2.2.0",
+    "jszip": "^3.10.1",
+    "mammoth": "^1.13.0",
+    "marked": "^18.1.1",
+    "pdfjs-dist": "^6.4.299",
+    "puppeteer": "^25.14.0",
+    "robots-parser": "^3.0.1",
+    "sharp": "^0.33.5",
+    "tldts": "^7.4.18",
+    "yauzl": "^3.4.0"
+  },
+  "optionalDependencies": {
+    "@napi-rs/canvas": "^1.0.11"
+  }
+}

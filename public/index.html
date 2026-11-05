@@ -1,0 +1,86 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Article Link Checker · 外媒发稿链接与原稿对比检测</title>
+<meta name="description" content="粘贴一篇海外媒体文章网址，检查正文里的品牌链接与锚文本、有没有被谷歌收录、首页有没有入口、页面实际长什么样，并可与客户原稿逐处对比、导出图文报告与 Word 修订稿。">
+<link rel="stylesheet" href="/style.css">
+</head>
+<body>
+<header class="top">
+  <div class="wrap">
+    <div class="brand">
+      <span class="logo">ALC</span>
+      <div>
+        <h1>Article Link Checker</h1>
+        <p>外媒发稿链接检测 · 品牌链接 / 收录 / 截图 / 原稿对比</p>
+      </div>
+    </div>
+    <a class="gh" href="https://github.com/" target="_blank" rel="noopener">GitHub ↗</a>
+  </div>
+</header>
+
+<main class="wrap">
+  <section class="card">
+    <form id="form" class="form">
+      <label class="field">
+        <span>文章网址 <em>*</em></span>
+        <input id="url" type="url" required placeholder="https://media.com/your-article" autocomplete="off">
+      </label>
+      <label class="field">
+        <span>品牌域名 <small>可选，只统计指向该域名的链接</small></span>
+        <input id="domain" type="text" placeholder="yourbrand.com" autocomplete="off">
+      </label>
+      <div class="actions">
+        <button id="submit" class="primary" type="submit">开始检测</button>
+        <button id="sample" class="ghost" type="button">填入示例</button>
+      </div>
+    </form>
+    <p id="error" class="error" hidden></p>
+  </section>
+
+  <section id="result" class="card" hidden>
+    <div class="result-head">
+      <div>
+        <h2 id="r-title">检测结果</h2>
+        <p id="r-url" class="muted"></p>
+      </div>
+      <div class="actions">
+        <button id="download" class="primary small" type="button">下载报告包</button>
+      </div>
+    </div>
+    <p id="notice" class="notice" hidden></p>
+    <div id="metrics" class="metrics"></div>
+    <div id="links"></div>
+    <div id="shots"></div>
+    <div id="search"></div>
+    <div id="compare"></div>
+  </section>
+
+  <section class="card" id="compare-card" hidden>
+    <h2>与原稿对比</h2>
+    <p class="muted">上传客户原稿（.docx / .pdf / .md / .txt / .html），逐处比对标题、锚文本、链接、配图与正文，并标注哪些地方被改过。</p>
+    <input id="file" type="file" accept=".docx,.pdf,.md,.markdown,.txt,.html,.htm">
+    <p id="compare-status" class="notice" hidden></p>
+  </section>
+
+  <section class="card intro">
+    <h2>它能做什么</h2>
+    <ul>
+      <li><strong>正文品牌链接</strong>：找出文章里指向你域名的链接、锚文本、dofollow / nofollow / sponsored。</li>
+      <li><strong>谷歌收录</strong>：查这篇是否被索引（需配置 DataForSEO，未配置则跳过）。</li>
+      <li><strong>实拍截图</strong>：文章页、栏目页、媒体首页首屏，用无头浏览器原尺寸截取。</li>
+      <li><strong>原稿对比</strong>：上传客户原稿，逐处标出标题、链接、配图与正文的改动，细微差别自动忽略。</li>
+      <li><strong>导出报告包</strong>：一个 zip，含图文 HTML 报告、截图原图、带修订模式的 Word 稿。</li>
+    </ul>
+  </section>
+</main>
+
+<footer class="foot wrap">
+  <p>MIT License · 本地部署，数据不出你的机器（除抓取目标站点与可选的 DataForSEO 查询）。</p>
+</footer>
+
+<script type="module" src="/app.js"></script>
+</body>
+</html>
