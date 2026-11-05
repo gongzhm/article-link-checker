@@ -1,8 +1,8 @@
 # Article Link Checker
 
-![Hosted version — English UI](docs/official.png)
+![Hosted version](docs/official.png)
 
-<sub>The screenshot above is the hosted version (<https://www.youtupr.com/tools/article-link-checker>, branded UI). The self-hosted build below ships the same features with a plainer interface — see Quick start.</sub>
+<sub>The screenshot above is the hosted version (<https://www.youtupr.com/tools/article-link-checker>, branded UI, shown in Chinese — the tool ships in both languages). The self-hosted build below ships the same features with a plainer interface — see Quick start.</sub>
 
 Paste the URL of an overseas media placement and see five things at once: **the brand links and anchor text in the body, whether Google has indexed it, whether the outlet's homepage links to it, what the page actually looks like, and how the published version differs from your draft**. Then export a zip with an illustrated HTML report, full-size screenshots and a Word redline.
 
@@ -41,8 +41,6 @@ npm start                         # http://127.0.0.1:3003
 ```
 
 Open `http://127.0.0.1:3003`, paste an article URL.
-
-![Self-hosted interface](docs/screenshot.png)
 
 Requires Node.js ≥ 22 (uses the built-in `--env-file-if-exists`).
 
